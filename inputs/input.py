@@ -2,7 +2,7 @@ import os
 import requests
 
 def get_input(day):
-    if (not os.path.isfile(f"./cookie.txt")):
+    if (not os.path.isfile("./cookie.txt")):
         open("cookie.txt", "x").write(input("What is your cookie? "))
 
     if (os.path.isfile(f"./inputs/{day}.txt")):
