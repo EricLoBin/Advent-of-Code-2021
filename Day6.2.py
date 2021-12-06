@@ -9,7 +9,7 @@ for i in inp:
 
 for i in range(256):
     tmp = fishes[0]
-    fishes = [fishes[i] for i in range(1, 9)]
+    fishes = fishes[1:]
     fishes[6] += tmp
     fishes.append(tmp)
 
