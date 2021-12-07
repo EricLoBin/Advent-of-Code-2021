@@ -7,10 +7,7 @@ max = max(inp)
 fuel = []
 
 def move(distance):
-    r = 0
-    for i in range(distance + 1):
-        r += i
-    return r
+    return int(((distance**2)+distance)/2)
 
 for i in range(max):
     print(str(round((i/max)*100, 2)) + "%")
