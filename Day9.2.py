@@ -8,7 +8,6 @@ checked = [[False for j in i] for i in inp]
 basin = []
 
 def check(x, y):
-    global checked
     if inp[x][y] == 9: return
     checked[x][y] = True
     if x > 0 and (not checked[x-1][y]): check(x-1, y)
