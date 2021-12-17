@@ -40,12 +40,12 @@ def move(xv, yv):
             return False
 
 
-successful = []
+successful = 0
 
 for xv in range(0, 200):
     for yv in range(-200, 200):
         res = move(xv, yv)
         if (res):
-            successful.append((xv, yv))
+            successful += 1
 
-print(len(successful))
+print(successful)
